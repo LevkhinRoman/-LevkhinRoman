@@ -1,0 +1,5 @@
+void FreeTree(binary_free* tree) {
+	if (tree->left) { FreeTree(tree->left); }
+	if (tree->right) { FreeTree(tree->right); }
+	delete tree;
+}
